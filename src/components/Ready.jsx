@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import imag from '../assets/imagg.jpg'
+import imag from '../assets/imag.png'
 
 
 const Ready = () => {

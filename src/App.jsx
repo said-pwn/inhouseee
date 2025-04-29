@@ -4,6 +4,8 @@ import Home from './components/Home';
 import BrandPage from './components/BrandPage';
 import AboutPage from './components/About';
 import NotFound from './components/NotFound';
+import Collaboration from './components/Collaboration';
+import UnderConstruction from './components/UnderConstruction'; 
 
 function App() {
   return (
@@ -13,10 +15,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/brandpage" element={<BrandPage />} />
         <Route path="/about" element={<AboutPage />} />
-        
+        <Route path="/collaboration" element={<Collaboration />} />
+        <Route path="/construction" element={<UnderConstruction />} /> 
         {/* добавляешь другие пути */}
 
         <Route path="*" element={<NotFound />} />
+        
       </Routes>
     </Router>
   );

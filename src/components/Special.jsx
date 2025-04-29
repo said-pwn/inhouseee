@@ -1,5 +1,5 @@
 
-import imag from '../assets/imagg.jpg'
+import imag from '../assets/imag.png'
 const Special = () => {
     const cards = [
         { id: 1, image: imag, title: 'Диваны', description: 'До 30%' },
@@ -16,7 +16,7 @@ const Special = () => {
   
   {cards.map((card) => (
    
-    <div key={card.id} className="relative group overflow-hidden cursor-pointer ">
+    <div key={card.id} className="relative group overflow-hidden cursor-pointer text-white">
       <img
         src={card.image}
         alt="Фото"
@@ -31,7 +31,7 @@ const Special = () => {
       </div>
 
      
-      <div className="absolute top-[-100%] left-0 w-full text-white  font-normal	 text-center py-6 text-xl  ease-in-out  ">
+      <div className="absolute top-[-100%] left-0 w-full text-white  	 text-center py-6 text-xl  ease-in-out  ">
         {card.hoverText}
       </div>
     </div>

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { FaWhatsapp, FaTelegramPlane, FaFacebookF, FaYoutube } from 'react-icons/fa';
-import img from '../assets/imageg.jpg';
-import { Link } from 'react-router-dom';
-
+import img from '../assets/imager.png';
+// import { Link } from 'react-router-dom';
+import { HiOutlineDeviceMobile } from 'react-icons/hi';
+import { HiOutlineExclamationTriangle } from 'react-icons/hi2';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,22 +13,28 @@ const Navbar = () => {
 
   const menuItems = [
     { label: 'Бренды', href: './BrandPage' },
-    { label: 'Каталог', href: '#' },
-    { label: 'Сотрудничество', href: '#' },
-    { label: 'Специальные предложения', href: '#' },
+    { label: 'Каталог', href: '/construction' },
+    { label: 'Сотрудничество', href: './Collaboration' },
+    { label: 'Специальные предложения', href: '/construction' },
     { label: 'О нас', href: '/about' },
     { label: '3D-модели', href: 'https://drive.google.com/drive/folders/1ESCBe5frD840JlwRwLKqV_FgtS9KUdu_' },
     { label: 'Виртуальный тур', href: 'https://kuula.co/share/collection/7XWWs?logo=-1&card=1&info=0&fs=1&vr=1&zoom=1&gyro=0&initload=0&thumbs=3&alpha=0.60&inst=ru&ysclid=m9xyz736iv433721404' },
   ];
 
   return (
+
     <header className="bg-neutral-900 text-white px-6 py-4 flex  items-center justify-between fixed top-0 left-0 w-full z-50 shadow-lg">
      
       <div className="flex items-center gap-2">
-        <img src={img} alt="Logo" className="h-8" />
+        <a href='/'><img src={img} alt="Logo" className="h-8" /></a>
         
+     
+        <div className="flex items-center justify-center bg-neutral-900 text-white py-4 px-6 rounded-full shadow-lg text-lg font-medium gap-2">
+        <HiOutlineExclamationTriangle className="text-yellow-500  " size={20} />Мобильная версия "хромает"
+  <HiOutlineDeviceMobile className="text-yellow-400" size={20} />
+</div> 
       </div>
-
+     
      
 
       <nav className="hidden md:flex gap-8 font-medium">
@@ -112,7 +119,10 @@ const Navbar = () => {
           </a>
         </div>
       </div>
+
+      
     </header>
+  
   );
 };
 

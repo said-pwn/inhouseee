@@ -9,6 +9,7 @@ import Contacts from './Contacts';
 import Footer from './Footer';
 import Collaboration from './Collaboration';
 import NotFound from './NotFound';
+import UnderConstruction from './UnderConstruction';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Brands />
       <Contacts />
       <Footer />
+      {/* <Collaboration/> */}
       {/* <NotFound/> */}
     </div>
   );
