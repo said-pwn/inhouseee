@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { FaWhatsapp, FaTelegramPlane, FaFacebookF, FaYoutube } from 'react-icons/fa';
-import img from '../assets/imager.png';
+// import img from '../assets/imager.png';
 import { Link } from 'react-router-dom';
 
 
@@ -24,7 +24,7 @@ const Navbar = () => {
     <header className="bg-neutral-900 text-white px-6 py-4 flex  items-center justify-between fixed top-0 left-0 w-full z-50 shadow-lg">
      
       <div className="flex items-center gap-2">
-        <img src={img} alt="Logo" className="h-8" />
+        {/* <img src={img} alt="Logo" className="h-8" /> */}
         
       </div>
 
