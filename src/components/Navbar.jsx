@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { FaWhatsapp, FaTelegramPlane, FaFacebookF, FaYoutube } from 'react-icons/fa';
-import img from '../assets/imageg.png';
+import img from '../assets/imageg.jpg';
 import { Link } from 'react-router-dom';
 
 

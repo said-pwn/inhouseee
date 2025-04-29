@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom'
-import imag from '../assets/imagg.png'
+import imag from '../assets/imagg.jpg'
 
 
 

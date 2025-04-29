@@ -1,5 +1,5 @@
 import React from 'react'
-import imag from '../assets/imagg.png'
+import imag from '../assets/imagg.jpg'
 
 const BrandPage = () => {
     const cards = [
