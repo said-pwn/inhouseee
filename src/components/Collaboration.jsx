@@ -1,11 +1,11 @@
 import React from 'react';
-import {imag} from '../assets/imag.png';
+// import {imag} from '../assets/imag.png';
 
 function Collaboration() {
   const slides = [
     {
       id: 1,
-      image: imag,
+      image: '',
       title: 'СОТРУДНИЧЕСТВО С\nINHOUSE',
       description: 'Мебель и ковры от лучших мировых производителей',
     },
@@ -45,7 +45,7 @@ function Collaboration() {
 
 <div className="w-full h-full flex justify-center">
   <img
-    src={imag}
+    src=''
     alt="HoReCa"
     className="object-cover rounded-lg max-h-[400px] w-full md:w-auto"
   />

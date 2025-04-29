@@ -3,7 +3,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import {imag} from '../assets/imag.png'
+// import {imag} from '../assets/imag.png'
 
 const Brands = () => {
   return (
@@ -19,7 +19,7 @@ const Brands = () => {
       >
         <SwiperSlide className='pl-86 pb-10'>
           <img
-            src={imag}
+            src='https://www.inhouse.kz/upload/iblock/0a2/0a2f3b1c4d5e7f8b6c9e4d5e7f8b6c9.jpg'
             alt="Slide 1"
             className="w-40 h-auto object-cover rounded-full  "
           />
@@ -28,14 +28,14 @@ const Brands = () => {
         </SwiperSlide>
         <SwiperSlide className='pl-86 pb-10'>
           <img
-            src={imag}
+            src='https://www.inhouse.kz/upload/iblock/0a2/0a2f3b1c4d5e7f8b6c9e4d5e7f8b6c9.jpg'
             alt="Slide 2"
             className="w-20 h-auto object-cover rounded-full"
           />
         </SwiperSlide>
         <SwiperSlide className='pl-86 pb-10'>
           <img
-            src={imag}
+            src='https://www.inhouse.kz/upload/iblock/0a2/0a2f3b1c4d5e7f8b6c9e4d5e7f8b6c9.jpg'
             alt="Slide 3"
             className="w-20 h-auto object-cover rounded-full"
           />

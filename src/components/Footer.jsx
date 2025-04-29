@@ -1,11 +1,11 @@
 import React from 'react'
-import {img} from '../assets/imager.png'
+// import {img} from '../assets/imager.png'
 
 const Footer = () => {
   return (
     <div >
 <div className='ml-20 pt-10'>
-  <img src={img}></img>
+  <img src=''></img>
 </div>
 <div className='flex bg-neutral-900 text-white pl-60 pb-50 gap-30 '>
 <div>

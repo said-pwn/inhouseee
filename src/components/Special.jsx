@@ -1,10 +1,10 @@
 
-import {imag} from '../assets/imag.png'
+// import {imag} from '../assets/imag.png'
 const Special = () => {
     const cards = [
-        { id: 1, image: imag, title: 'Диваны', description: 'До 30%' },
-        { id: 2, image: imag, title: 'Кровати', description: 'Выбирайте лучшее для себя' },
-        { id: 3, image: imag, title: 'Шкафы', description: 'Берите лучшее'},
+        { id: 1, image: '', title: 'Диваны', description: 'До 30%' },
+        { id: 2, image: '', title: 'Кровати', description: 'Выбирайте лучшее для себя' },
+        { id: 3, image: '', title: 'Шкафы', description: 'Берите лучшее'},
 
         
       ];
@@ -18,7 +18,7 @@ const Special = () => {
    
     <div key={card.id} className="relative group overflow-hidden cursor-pointer text-white">
       <img
-        src={card.image}
+        src=''
         alt="Фото"
         className="w-full h-full object-cover"  
       />

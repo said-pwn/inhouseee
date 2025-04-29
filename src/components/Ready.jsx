@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import {imag} from '../assets/imag.png'
+// import {imag} from '../assets/imag.png'
 
 
 const Ready = () => {
@@ -16,19 +16,19 @@ const Ready = () => {
       const slides = [
         {
           id: 1,
-          image: imag,
+          image: '',
           title: 'Спальня Adessa - Akyol',
           description: 'Сочетая естественную эстетику дерева...',
         },
         {
           id: 2,
-          image: imag,
+          image: '',
           title: 'Спальня Antik - Akyol',
           description: 'Спальный гарнитур Antik, создающий...',
         },
         {
           id: 3,
-          image: imag,
+          image: '',
           title: 'Спальня Defne - Akyol',
           description: 'Благодаря современному дизайну...',
         },
