@@ -1,5 +1,5 @@
 import React from 'react';
-import imag from '../assets/imag.png';
+import {imag} from '../assets/imag.png';
 
 function Collaboration() {
   const slides = [
