@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { FaWhatsapp, FaTelegramPlane, FaFacebookF, FaYoutube } from 'react-icons/fa';
-import img from '../assets/imager.png';
+import img from '../assets/imager.PNG';
 // import { Link } from 'react-router-dom';
 import { HiOutlineDeviceMobile } from 'react-icons/hi';
 import { HiOutlineExclamationTriangle } from 'react-icons/hi2';
@@ -29,10 +29,7 @@ const Navbar = () => {
         <a href='/'><img src={img} alt="Logo" className="h-8" /></a>
         
      
-        <div className="flex items-center justify-center bg-neutral-900 text-white py-4 px-6 rounded-full shadow-lg text-lg font-medium gap-2">
-        <HiOutlineExclamationTriangle className="text-yellow-500  " size={20} />Мобильная версия "хромает"
-  <HiOutlineDeviceMobile className="text-yellow-400" size={20} />
-</div> 
+    
       </div>
      
      

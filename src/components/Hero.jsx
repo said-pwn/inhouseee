@@ -4,7 +4,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import imag from '../assets/imag.png';
+import imag from '../assets/imag.PNG';
 import axios from 'axios';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
