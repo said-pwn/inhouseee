@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink as Link } from 'react-router-dom'
-import imag from '../assets/imag.PNG'
+import imag from '../assets/imag.png'
 
 
 

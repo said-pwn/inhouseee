@@ -3,7 +3,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import imag from '../assets/imag.PNG'
+import imag from '../assets/imag.png'
 
 const Brands = () => {
   return (
