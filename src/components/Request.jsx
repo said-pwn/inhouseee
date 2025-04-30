@@ -21,7 +21,7 @@ const Request = () => {
 
     // Проверка валидности номера
     if (!isValidPhoneNumber(userPhone)) {
-      setPhoneError('Неверный номер телефона');
+      setPhoneError('Неверный формат номера');
       return;
     }
 
