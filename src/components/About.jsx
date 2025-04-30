@@ -1,22 +1,51 @@
-import React from 'react'
-import image from '../assets/photo.PNG'
+import React from 'react';
+import photo from '../assets/photo.png'; 
+import { FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 const About = () => {
-   
   return (
-    <div className='flex  bg-neutral-900 text-white'>    <img src={image} className='w-170 mt-20 '></img>
-    <div >
-    <div className='mt-50  text-4xl m-20 '>INHOUSE это -</div>
-    <div className='mt-80 text-1xl '> 
-Дизайн, стиль, удобство мебели и интерьера.
-Мы объединили всё самое лучшее, качественное и привлекательное для вас и вашего любимого дома. Сейчас рады представить вам лучшее из лучших.
+    <div className="flex flex-col md:flex-row items-center bg-neutral-900 text-white px-4 md:px-20 py-10 gap-10">
 
-Мебель и ковры от лучших мировых производителей теперь доступна. С уверенностью можем гарантировать, что вы не будете разочарованы и это всё будет радовать вас своим комфортом и красотой долгие годы. Будем рады видеть вас в наших шоу-румах!</div>
+      <div className="w-full md:w-1/2">
+        <img src={photo} alt="inhouse" className="rounded-lg shadow-lg " />
+      </div>
+
+
+      <div className="w-full md:w-1/2">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">
+          <span className="text-gray-300">IN</span>HOUSE это -
+        </h2>
+        <p className="text-lg mb-4 leading-relaxed text-gray-300">
+          Дизайн, стиль, удобство мебели и интерьера.
+          Мы объединили всё самое лучшее, качественное и привлекательное для вас и вашего любимого дома.
+          Сейчас рады представить вам лучшее из лучших.
+        </p>
+        <p className="text-lg mb-6 leading-relaxed text-gray-300">
+          Мебель и ковры от лучших мировых производителей теперь доступна.
+          С уверенностью можем гарантировать, что вы не будете разочарованы —
+          это всё будет радовать вас своим комфортом и красотой долгие годы.
+          Будем рады видеть вас в наших шоу-румах!
+        </p>
+
+        <div className="flex gap-4 mt-4">
+          <a
+            href="https://wa.me/ваш_номер"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-500 text-3xl hover:scale-110 transition"
+          >
+            <FaWhatsapp />
+          </a>
+          <a
+            href="tel:+ваш_номер"
+            className="text-sky-500 text-3xl hover:scale-110 transition"
+          >
+            <FaPhone />
+          </a>
+        </div>
+      </div>
     </div>
-    
-       </div>
-    
-  )
-}
+  );
+};
 
-export default About
+export default About;
