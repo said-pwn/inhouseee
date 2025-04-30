@@ -14,8 +14,9 @@ const Request = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
+
     try {
-      const response = await axios.post('http://localhost:10000/send-data', {
+      const response = await axios.post('https://bot-1-ilyj.onrender.com/send-data', {
         userName,
         userPhone,
       });
@@ -28,7 +29,7 @@ const Request = () => {
         toast.error('Что-то пошло не так.');
       }
     } catch (error) {
-      console.error('Ошибка:', error);
+      console.error('Ошибка:', error.response ? error.response.data : error.message);
       toast.error('Ошибка при отправке данных');
     } finally {
       setIsLoading(false);
