@@ -1,11 +1,11 @@
 import React from 'react'
-// import {image} from '../assets/image.png'
+import image from '../assets/imag.PNG'
 
 const About = () => {
    
   return (
-    <div className='flex  bg-neutral-900 text-white'>    <img src='' className='w-170 mt-20 '></img>
-    <div className=''>
+    <div className='flex  bg-neutral-900 text-white'>    <img src={image} className='w-170 mt-20 '></img>
+    <div >
     <div className='mt-50  text-4xl m-20 '>INHOUSE это -</div>
     <div className='mt-80 text-1xl '> 
 Дизайн, стиль, удобство мебели и интерьера.

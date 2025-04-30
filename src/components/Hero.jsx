@@ -4,7 +4,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// import {imag} from '../assets/imag.png';
+import imag from '../assets/imag.PNG';
 import axios from 'axios';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
@@ -20,10 +20,10 @@ export default function Carousel() {
   const defaultCountry = 'KG';
 
   const slides = [
-    { id: 1, image: '', title: 'БЕСПЛАТНАЯ ДОСТАВКА КОВРОВ ПО ВСЕМУ КЫРГЫЗСТАНУ' },
-    { id: 2, image: '', title: 'СКИДКИ ДО 50% НА ВСЮ ПРОДУКЦИЮ' },
-    { id: 3, image: '', title: 'НОВЫЕ ПОСТУПЛЕНИЯ' },
-    { id: 4, image: '', title: 'СКИДКИ НА 3D КОВРЫ' },
+    { id: 1, image: {imag}, title: 'БЕСПЛАТНАЯ ДОСТАВКА КОВРОВ ПО ВСЕМУ КЫРГЫЗСТАНУ' },
+    { id: 2, image: {imag}, title: 'СКИДКИ ДО 50% НА ВСЮ ПРОДУКЦИЮ' },
+    { id: 3, image: {imag}, title: 'НОВЫЕ ПОСТУПЛЕНИЯ' },
+    { id: 4, image: {imag}, title: 'СКИДКИ НА 3D КОВРЫ' },
   ];
 
   const openModal = (slide) => {

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import {imag} from '../assets/imag.png';
+import image from '../assets/imag.PNG';
 
 const BrandPage = () => {
   const cards = [
-    { id: 1, image: '', title: 'Modis', hoverText: 'Подробнее', href: '/construction' },
-    { id: 2, image: '', title: 'Bomonti', hoverText: 'Подробнее', href: '/construction' },
-    { id: 3, image: '', title: 'Akyol', hoverText: 'Подробнее', href: '/construction' },
-    { id: 4, image: '', title: 'Ozzo', hoverText: 'Подробнее', href: '/construction' },
-    { id: 5, image: '', title: 'Togo', hoverText: 'Подробнее', href: '/construction' },
-    { id: 6, image: '', title: 'Verbatex', hoverText: 'Подробнее', href: '/construction' },
+    { id: 1, image: {image}, title: 'Modis', hoverText: 'Подробнее', href: '/construction' },
+    { id: 2, image: {image}, title: 'Bomonti', hoverText: 'Подробнее', href: '/construction' },
+    { id: 3, image: {image}, title: 'Akyol', hoverText: 'Подробнее', href: '/construction' },
+    { id: 4, image: {image}, title: 'Ozzo', hoverText: 'Подробнее', href: '/construction' },
+    { id: 5, image: {image}, title: 'Togo', hoverText: 'Подробнее', href: '/construction' },
+    { id: 6, image: {image}, title: 'Verbatex', hoverText: 'Подробнее', href: '/construction' },
   ];
 
   return (

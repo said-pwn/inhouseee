@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink as Link } from 'react-router-dom'
-// import {imag} from '../assets/imag.png'
+import imag from '../assets/imag.PNG'
 
 
 
@@ -8,17 +8,17 @@ import { NavLink as Link } from 'react-router-dom'
 const Main = () => {
 
  const cards = [
-    { id: 1, image: '', title: 'Диваны', hoverText: 'Подробнее', href: '/construction' },
-    { id: 2, image: '', title: 'Кровати', hoverText: 'Подробнее', href: '/construction' },
-    { id: 3, image: '', title: 'Шкафы', hoverText: 'Подробнее', href: '/construction' },
-    { id: 4, image: '', title: 'Комоды', hoverText: 'Подробнее', href: '/construction' },
-    { id: 5, image: '', title: 'Столы', hoverText: 'Подробнее', href: '/construction' },
-    { id: 6, image: '', title: 'Стулья', hoverText: 'Подробнее', href: '/construction' },
+    { id: 1, image: {imag}, title: 'Sofas', hoverText: 'More details', href: '/construction' },
+    { id: 2, image: {imag}, title: 'Beds', hoverText: 'More details', href: '/construction' },
+    { id: 3, image: {imag}, title: 'Wardrobes', hoverText: 'More details', href: '/construction' },
+    { id: 4, image: {imag}, title: 'Dressers', hoverText: 'More details', href: '/construction' },
+    { id: 5, image: {imag}, title: 'Tables', hoverText: 'More details', href: '/construction' },
+    { id: 6, image: {imag}, title: 'Chairs', hoverText: 'More details', href: '/construction' },
   ];
 
   return (
     <div className="bg-neutral-900">
-    <div className='bg-neutral-900 text-3xl lg:h-50    flex justify-start  p-15'>То, что мы для Вас подготовили</div>
+    <div className='bg-neutral-900 text-3xl lg:h-50    flex justify-start  p-15'>What we have prepared for you</div>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1.5 bg-neutral-900/90">
       {cards.map((card) => (
         <Link to={card.href} key={card.id}>
