@@ -35,7 +35,7 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-300 text-sm">
             <li>Бишкек, мкр. Улан-2, ул. 7 апреля, 2</li>
             <li>+996 777 020 020</li>
-            <li>info@mebel.kg</li>
+            <li>inhousekyrgyzstan@gmail.com</li>
           </ul>
         </div>
       </div>
