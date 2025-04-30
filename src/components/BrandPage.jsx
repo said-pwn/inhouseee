@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import image from '../assets/photo.PNG';
+import image from '../assets/photto.PNG';
 
 const BrandPage = () => {
   const cards = [
