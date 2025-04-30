@@ -4,12 +4,12 @@ import image from '../assets/photo.PNG';
 
 const BrandPage = () => {
   const cards = [
-    { id: 1, image: {image}, title: 'Modis', hoverText: 'Подробнее', href: '/construction' },
-    { id: 2, image: {image}, title: 'Bomonti', hoverText: 'Подробнее', href: '/construction' },
-    { id: 3, image: {image}, title: 'Akyol', hoverText: 'Подробнее', href: '/construction' },
-    { id: 4, image: {image}, title: 'Ozzo', hoverText: 'Подробнее', href: '/construction' },
-    { id: 5, image: {image}, title: 'Togo', hoverText: 'Подробнее', href: '/construction' },
-    { id: 6, image: {image}, title: 'Verbatex', hoverText: 'Подробнее', href: '/construction' },
+    { id: 1, image: image, title: 'Modis', hoverText: 'Подробнее', href: '/construction' },
+    { id: 2, image: image, title: 'Bomonti', hoverText: 'Подробнее', href: '/construction' },
+    { id: 3, image: image, title: 'Akyol', hoverText: 'Подробнее', href: '/construction' },
+    { id: 4, image: image, title: 'Ozzo', hoverText: 'Подробнее', href: '/construction' },
+    { id: 5, image: image, title: 'Togo', hoverText: 'Подробнее', href: '/construction' },
+    { id: 6, image: image, title: 'Verbatex', hoverText: 'Подробнее', href: '/construction' },
   ];
 
   return (

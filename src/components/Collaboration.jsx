@@ -1,11 +1,11 @@
 import React from 'react';
-import imag from '../assets/photo.PNG';
+import image from '../assets/photo.PNG';
 
 function Collaboration() {
   const slides = [
     {
       id: 1,
-      image: {imag},
+      image: image,
       title: 'СОТРУДНИЧЕСТВО С\nINHOUSE',
       description: 'Мебель и ковры от лучших мировых производителей',
     },

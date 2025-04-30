@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink as Link } from 'react-router-dom'
-import imag from '../assets/photo.PNG'
+import image from '../assets/photo.PNG'
 
 
 
@@ -8,12 +8,12 @@ import imag from '../assets/photo.PNG'
 const Main = () => {
 
  const cards = [
-    { id: 1, image: {imag}, title: 'Sofas', hoverText: 'More details', href: '/construction' },
-    { id: 2, image: {imag}, title: 'Beds', hoverText: 'More details', href: '/construction' },
-    { id: 3, image: {imag}, title: 'Wardrobes', hoverText: 'More details', href: '/construction' },
-    { id: 4, image: {imag}, title: 'Dressers', hoverText: 'More details', href: '/construction' },
-    { id: 5, image: {imag}, title: 'Tables', hoverText: 'More details', href: '/construction' },
-    { id: 6, image: {imag}, title: 'Chairs', hoverText: 'More details', href: '/construction' },
+    { id: 1, image: image, title: 'Sofas', hoverText: 'More details', href: '/construction' },
+    { id: 2, image: image, title: 'Beds', hoverText: 'More details', href: '/construction' },
+    { id: 3, image: image, title: 'Wardrobes', hoverText: 'More details', href: '/construction' },
+    { id: 4, image: image, title: 'Dressers', hoverText: 'More details', href: '/construction' },
+    { id: 5, image: image, title: 'Tables', hoverText: 'More details', href: '/construction' },
+    { id: 6, image: image, title: 'Chairs', hoverText: 'More details', href: '/construction' },
   ];
 
   return (

@@ -3,7 +3,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import imag from '../assets/photo.PNG'
+import image from '../assets/photo.PNG'
 
 const Brands = () => {
   return (
@@ -19,7 +19,7 @@ const Brands = () => {
       >
         <SwiperSlide className='pl-86 pb-10'>
           <img
-            src={imag}
+            src={image}
             alt="Slide 1"
             className="w-40 h-auto object-cover rounded-full  "
           />
