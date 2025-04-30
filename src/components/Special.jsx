@@ -18,7 +18,7 @@ const Special = () => {
    
     <div key={card.id} className="relative group overflow-hidden cursor-pointer text-white">
       <img
-        src=''
+        src={card.image}
         alt="Фото"
         className="w-full h-full object-cover"  
       />
