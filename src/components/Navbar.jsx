@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { FaWhatsapp, FaTelegramPlane, FaFacebookF, FaYoutube } from 'react-icons/fa';
-import img from '../assets/photo.PNG';
+import img from '../assets/image.PNG';
 // import { Link } from 'react-router-dom';
 import { HiOutlineDeviceMobile } from 'react-icons/hi';
 import { HiOutlineExclamationTriangle } from 'react-icons/hi2';
