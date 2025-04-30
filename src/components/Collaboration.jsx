@@ -45,11 +45,28 @@ function Collaboration() {
 
 <div className="w-full h-full flex justify-center">
   <img
-    src=''
+    src={image}
     alt="HoReCa"
     className="object-cover rounded-lg max-h-[400px] w-full md:w-auto"
   />
 </div>
+ <div className="w-full h-full flex justify-center">
+    <img
+      src={image}
+      alt="HoReCa"
+      className="object-cover rounded-lg max-h-[400px] w-full md:w-auto"
+    />
+  </div>
+
+
+  <div>
+    <h2 className="text-3xl md:text-4xl font-light mb-4">
+      Приглашаем к сотрудничеству <br /> в сфере HoReCa
+    </h2>
+    <p className="text-base md:text-lg font-light text-gray-300">
+      Гармоничный и уютный интерьер кафе или ресторана — лучший способ расположить гостей.
+    </p>
+  </div>
 </section>
 
     </div>

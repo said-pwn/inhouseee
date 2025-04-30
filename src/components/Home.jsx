@@ -13,7 +13,7 @@ import UnderConstruction from './UnderConstruction';
 
 export default function Home() {
   return (
-    <div className="bg-neutral-900 text-white">
+    <div className="bg-neutral-900 text-white overflow-x-hidden">
       <Hero />
       <Main />
       <Request />

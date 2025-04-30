@@ -27,22 +27,7 @@ const About = () => {
           Будем рады видеть вас в наших шоу-румах!
         </p>
 
-        <div className="flex gap-4 mt-4">
-          <a
-            href="https://wa.me/ваш_номер"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-green-500 text-3xl hover:scale-110 transition"
-          >
-            <FaWhatsapp />
-          </a>
-          <a
-            href="tel:+ваш_номер"
-            className="text-sky-500 text-3xl hover:scale-110 transition"
-          >
-            <FaPhone />
-          </a>
-        </div>
+        
       </div>
     </div>
   );
