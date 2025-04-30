@@ -1,5 +1,5 @@
 
-import imag from '../assets/imag.PNG'
+import imag from '../assets/photo.PNG'
 const Special = () => {
     const cards = [
         { id: 1, image: {imag}, title: 'Диваны', description: 'До 30%' },
