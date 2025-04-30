@@ -33,8 +33,8 @@ const Footer = () => {
         <div>
           <h3 className="text-xl sm:text-2xl font-semibold mb-4">Контакты</h3>
           <ul className="space-y-2 text-gray-300 text-sm">
-            <li>г. Бишкек, ул. Московская 123</li>
-            <li>+996 555 123 456</li>
+            <li>Бишкек, мкр. Улан-2, ул. 7 апреля, 2</li>
+            <li>+996 777 020 020</li>
             <li>info@mebel.kg</li>
           </ul>
         </div>

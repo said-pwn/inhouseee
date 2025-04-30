@@ -17,6 +17,7 @@ const Ready = () => {
       image: image,
       title: 'Спальня Adessa - Akyol',
       description: 'Сочетая естественную эстетику дерева...',
+      href: '/Collaboration',
     },
     {
       id: 2,
@@ -79,8 +80,8 @@ const Ready = () => {
                   <p className="text-sm text-gray-300">{slide.description}</p>
                 </div>
                 <div className="mt-4 space-y-2">
-                  <button className="w-full bg-white text-black py-2 rounded-full hover:bg-gray-200 transition">Подробнее</button>
-                  <button className="w-full bg-white text-black py-2 rounded-full hover:bg-gray-200 transition">Другие комплекты</button>
+                  <a className="w-full bg-white text-black py-2 rounded-full hover:bg-gray-200 transition">Подробнее</a>
+                  <a  className="w-full bg-white text-black py-2 rounded-full hover:bg-gray-200 transition">Другие комплекты</a>
                 </div>
               </div>
             </div>

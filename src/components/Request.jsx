@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SpinningCircles } from 'react-loading-icons';
 import { FaCheckCircle } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
+import {  AnimatePresence } from 'framer-motion';
 
 const Request = () => {
   const [userName, setUserName] = useState('');
