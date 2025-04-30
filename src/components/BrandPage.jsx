@@ -24,15 +24,15 @@ const BrandPage = () => {
       alt={card.title}
     />
 
-    {/* Постоянный серый фон поверх картинки */}
+
     <div className="absolute inset-0 bg-neutral-700/60" />
 
-    {/* Основной текст — немного поднимается при hover */}
+
     <div className="absolute bottom-6 left-0 w-full text-white text-center text-2xl font-bold z-10 transition-all duration-700 group-hover:translate-y-[-20px]">
       {card.title}
     </div>
 
-    {/* Hover-текст — появляется сверху при hover */}
+
     <div className="absolute top-[-100%] left-0 w-full text-white text-center py-6 text-xl ease-in-out group-hover:top-40 font-bold z-10 ">
       {card.hoverText}
     </div>

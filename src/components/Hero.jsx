@@ -42,7 +42,7 @@ export default function Carousel() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/send-data', {
+      const response = await axios.post('https://bot-1-ilyj.onrender.com/send-data', {
         userName,
         userPhone,
       });
