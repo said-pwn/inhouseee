@@ -1,13 +1,29 @@
 import express from 'express';
 import axios from 'axios';
 import bodyParser from 'body-parser';
+<<<<<<< HEAD
 import cors from 'cors'; 
 
 const app = express();
 const TELEGRAM_TOKEN = '8015030525:AAFoBZZnA8TBl8TuddVAyJUb9FdAeatSqiM'; 
 const CHAT_ID = '1395598568'; 
+=======
+import cors from 'cors';
 
-app.use(cors());
+const app = express();
+>>>>>>> 793b1dbf32ca1499bb59956ab502f198d1dfeef4
+
+// Токен вашего бота и chat_id
+const TELEGRAM_TOKEN = '7991694639:AAEqlqfzYpUy4vy-_e8K-yWYPyz9nEeov9s'; // Замените на свой токен
+const CHAT_ID = '1395598568'; // Замените на свой chat ID
+
+// Настройка CORS, разрешаем запросы с любых источников
+app.use(cors({
+  origin: '*', // Разрешаем все источники
+  methods: ['GET', 'POST'], // Разрешаем методы
+}));
+
+// Использование body-parser для парсинга JSON и URL-encoded данных
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -16,6 +32,7 @@ app.post('/send-data', async (req, res) => {
   const message = `Новый заказ от ${userName},\nТелефон номер: ${userPhone}`;
 
   try {
+    // Отправка сообщения в Telegram через API
     await axios.post(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
       chat_id: CHAT_ID,
       text: message,
@@ -27,6 +44,8 @@ app.post('/send-data', async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log('Сервер работает на порту 5000');
+// Используем переменную окружения для порта, если она не задана, то используем 5000
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+  console.log(`Сервер работает на порту ${port}`);
 });
