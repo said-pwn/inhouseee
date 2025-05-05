@@ -1,11 +1,11 @@
 import express from 'express';
 import axios from 'axios';
 import bodyParser from 'body-parser';
-import cors from 'cors'; // <-- Add this line
+import cors from 'cors'; 
 
 const app = express();
-const TELEGRAM_TOKEN = '7991694639:AAEqlqfzYpUy4vy-_e8K-yWYPyz9nEeov9s'; // Replace with your bot token
-const CHAT_ID = '1395598568'; // Replace with your Telegram chat ID
+const TELEGRAM_TOKEN = '8015030525:AAFoBZZnA8TBl8TuddVAyJUb9FdAeatSqiM'; 
+const CHAT_ID = '1395598568'; 
 
 app.use(cors());
 app.use(bodyParser.json());

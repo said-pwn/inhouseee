@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SpinningCircles } from 'react-loading-icons';
 import { FaCheckCircle } from 'react-icons/fa';
-import {  AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Request = () => {
   const [userName, setUserName] = useState('');
@@ -19,7 +19,6 @@ const Request = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Проверка валидности номера
     if (!isValidPhoneNumber(userPhone)) {
       setPhoneError('Неверный формат номера');
       return;
@@ -29,7 +28,7 @@ const Request = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('https://bot-1-ilyj.onrender.com/send-data', {
+      const response = await axios.post('https://bot-mg4r.onrender.com//send-data', {
         userName,
         userPhone,
       });
@@ -49,7 +48,6 @@ const Request = () => {
     }
   };
 
-  // Автоматическое скрытие формы через 5 секунд
   useEffect(() => {
     if (isSubmitted) {
       const timer = setTimeout(() => setIsSubmitted(false), 5000);
@@ -94,7 +92,7 @@ const Request = () => {
                 className="bg-neutral-800 border border-neutral-600 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-neutral-500 text-white"
                 international
                 defaultCountry={defaultCountry}
-                value={userPhone}
+                value={userPhone || ''}
                 onChange={setUserPhone}
                 required
               />
@@ -129,7 +127,7 @@ const Request = () => {
             <FaCheckCircle className="text-green-500 text-5xl" />
             <h1 className="text-xl font-bold">Успешно отправлено!</h1>
             <p className="text-neutral-300">
-              Мы получили вашу заявку и скоро свяжемся с вами.
+              Мы получили вашу заявку и скоро наш менеджер свяжется с вами.
             </p>
           </motion.div>
         )}
