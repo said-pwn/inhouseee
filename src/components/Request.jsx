@@ -28,7 +28,7 @@ const Request = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('https://bot-mg4r.onrender.com//send-data', {
+      const response = await axios.post('https://bot-mg4r.onrender.com/send-data', {
         userName,
         userPhone,
       });
